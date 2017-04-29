@@ -35,7 +35,7 @@ LOCAL_PRIVILEGED_MODULE := true
 
 # Sign the package when not using test-keys
 ifneq ($(DEFAULT_SYSTEM_DEV_CERTIFICATE),build/target/product/security/testkey)
-LOCAL_CERTIFICATE := cyngn-priv-app
+LOCAL_CERTIFICATE := releasekey
 endif
 
 include $(BUILD_PACKAGE)
